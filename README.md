@@ -17,3 +17,11 @@ volume.
 
 To stop the services, run `docker compose down`. To also remove persisted
 MongoDB data, run `docker compose down --volumes`.
+
+Seed the database with repeatable demo users and an organization:
+
+```sh
+make seed
+```
+
+This starts MongoDB if needed and upserts the same demo records on each run.

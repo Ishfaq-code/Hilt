@@ -5,7 +5,7 @@ const mongoose = require('mongoose')
 
 const app = express()
 const port = process.env.PORT || 3000
-const mongoUri = process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/hilt'
+const mongoUri = process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/HiltDB'
 
 app.get('/api/health', (req, res) => {
   res.json({

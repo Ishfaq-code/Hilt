@@ -1,4 +1,4 @@
-.PHONY: up down build logs ps restart clean
+.PHONY: up down build logs ps restart seed clean
 
 up:
 	docker compose up --build
@@ -17,6 +17,9 @@ ps:
 
 restart:
 	docker compose restart
+
+seed:
+	docker compose run --rm backend npm run seed
 
 clean:
 	docker compose down --volumes
